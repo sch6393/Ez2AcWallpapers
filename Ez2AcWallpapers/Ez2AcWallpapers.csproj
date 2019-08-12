@@ -236,6 +236,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\FN.mp4" />
     <None Include="Resources\northpole.mp4" />
     <None Include="Resources\15.png" />
     <None Include="Resources\WhiteOut.mp4" />

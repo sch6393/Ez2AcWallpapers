@@ -64,6 +64,8 @@
             this.metroTile13_1 = new MetroFramework.Controls.MetroTile();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.metroTile14 = new MetroFramework.Controls.MetroTile();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.metroTile15 = new MetroFramework.Controls.MetroTile();
             this.metroTrackBar_Brightness = new MetroFramework.Controls.MetroTrackBar();
             this.metroTrackBar_Volume = new MetroFramework.Controls.MetroTrackBar();
             this.label_Volume = new System.Windows.Forms.Label();
@@ -87,6 +89,7 @@
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
             this.tabPage14.SuspendLayout();
+            this.tabPage15.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -105,6 +108,7 @@
             this.tabControl.Controls.Add(this.tabPage12);
             this.tabControl.Controls.Add(this.tabPage13);
             this.tabControl.Controls.Add(this.tabPage14);
+            this.tabControl.Controls.Add(this.tabPage15);
             this.tabControl.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tabControl.HotTrack = true;
             this.tabControl.Location = new System.Drawing.Point(23, 64);
@@ -628,6 +632,34 @@
             this.metroTile14.UseTileImage = true;
             this.metroTile14.Click += new System.EventHandler(this.metroTile14_Click);
             // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.metroTile15);
+            this.tabPage15.Location = new System.Drawing.Point(4, 24);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(775, 202);
+            this.tabPage15.TabIndex = 14;
+            this.tabPage15.Text = "FN";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // metroTile15
+            // 
+            this.metroTile15.ActiveControl = null;
+            this.metroTile15.Location = new System.Drawing.Point(6, 7);
+            this.metroTile15.Name = "metroTile15";
+            this.metroTile15.Size = new System.Drawing.Size(250, 187);
+            this.metroTile15.TabIndex = 0;
+            this.metroTile15.Text = "FN";
+            this.metroTile15.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.metroTile15.TileImage = global::Ez2AcWallpapers.Properties.Resources._15;
+            this.metroTile15.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile15.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile15.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile15.UseSelectable = true;
+            this.metroTile15.UseTileImage = true;
+            this.metroTile15.Click += new System.EventHandler(this.MetroTile15_Click);
+            // 
             // metroTrackBar_Brightness
             // 
             this.metroTrackBar_Brightness.BackColor = System.Drawing.Color.Transparent;
@@ -772,6 +804,7 @@
             this.tabPage12.ResumeLayout(false);
             this.tabPage13.ResumeLayout(false);
             this.tabPage14.ResumeLayout(false);
+            this.tabPage15.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -822,6 +855,8 @@
         private MetroFramework.Controls.MetroButton metroButton_Stop;
         private MetroFramework.Controls.MetroButton metroButton_WhiteOut;
         private MetroFramework.Controls.MetroButton metroButton_Northpole;
+        private System.Windows.Forms.TabPage tabPage15;
+        private MetroFramework.Controls.MetroTile metroTile15;
     }
 }
 

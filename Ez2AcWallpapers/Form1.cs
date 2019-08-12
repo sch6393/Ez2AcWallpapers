@@ -85,11 +85,12 @@ namespace Ez2AcWallpapers
         /// 19 : TT
         /// 20 : White Out
         /// 21 : North Pole
+        /// 22 : FN
         /// </summary>
-        protected bool[] m_bFlag = new bool[22];
+        protected bool[] m_bFlag = new bool[23];
 
         // 첫 탭 페이지 설정
-        protected int m_iSelect = 13;
+        protected int m_iSelect = 14;
         // protected int m_iTile = 0;
 
         public Form1()
@@ -363,6 +364,10 @@ namespace Ez2AcWallpapers
                         File.WriteAllBytes(varFile, Properties.Resources.northpole);
                         break;
 
+                    case 22:
+                        File.WriteAllBytes(varFile, Properties.Resources.FN);
+                        break;
+
                     default:
                         MessageBox.Show("오류가 발생했습니다!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         // MessageBox.Show("An Unhandled Exception Occurred!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -579,6 +584,16 @@ namespace Ez2AcWallpapers
         private void metroTile14_Click(object sender, EventArgs e)
         {
             Tiles(19);
+        }
+
+        /// <summary>
+        /// FN
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MetroTile15_Click(object sender, EventArgs e)
+        {
+            Tiles(22);
         }
 
         #endregion

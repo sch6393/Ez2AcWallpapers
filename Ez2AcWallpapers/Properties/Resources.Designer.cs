@@ -141,6 +141,16 @@ namespace Ez2AcWallpapers.Properties {
         }
         
         /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _15 {
+            get {
+                object obj = ResourceManager.GetObject("_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         internal static byte[] _1st {
@@ -437,6 +447,16 @@ namespace Ez2AcWallpapers.Properties {
             get {
                 object obj = ResourceManager.GetObject("ez2ac_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] FN {
+            get {
+                object obj = ResourceManager.GetObject("FN", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

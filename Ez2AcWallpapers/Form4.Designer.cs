@@ -45,10 +45,10 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(178, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 225);
+            this.label2.Size = new System.Drawing.Size(71, 240);
             this.label2.TabIndex = 0;
             this.label2.Text = "1st\r\n1st Special\r\n2nd\r\n2nd Event\r\n3rd\r\n4th\r\n4th Event\r\nPlatinum\r\n6th\r\n7th 1.0\r\n7t" +
-    "h 2.0\r\nCV\r\nAEIC\r\nNT\r\nTT";
+    "h 2.0\r\nCV\r\nAEIC\r\nNT\r\nTT\r\nFN";
             // 
             // label5
             // 
@@ -68,7 +68,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label6.Location = new System.Drawing.Point(23, 335);
+            this.label6.Location = new System.Drawing.Point(23, 350);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 28);
             this.label6.TabIndex = 0;
@@ -80,7 +80,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(178, 335);
+            this.label3.Location = new System.Drawing.Point(178, 350);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 75);
             this.label3.TabIndex = 0;
@@ -113,7 +113,7 @@
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(280, 425);
+            this.ClientSize = new System.Drawing.Size(280, 440);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
