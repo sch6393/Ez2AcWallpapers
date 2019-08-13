@@ -189,7 +189,7 @@ namespace Ez2AcWallpapers
             catch (Exception)
             {
                 // MessageBox.Show("Font 폴더에 'Userfont.ttf' 파일이 존재하지 않습니다!\n시스템 기본 폰트로 실행합니다.", "에러 발생", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // Form5.DialogCustom("Error!", "'Userfont.ttf' File Does not Exist in the Font Folder! Run as the System Default Font!");
+                // MessageBox.Show("Error!", "'Userfont.ttf' File Does not Exist in the Font Folder! Run as the System Default Font!");
             }
         }
 

@@ -31,15 +31,15 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 폰트 선언
         /// </summary>
-        protected FontFamily m_FF;
-        protected Font m_Font;
+        protected FontFamily m_fontFamily;
+        protected Font m_font;
 
         public Form4()
         {
             InitializeComponent();
 
             FontCollection();
-            FontSet(m_Font);
+            FontSet(m_font);
         }
 
         #region Font
@@ -50,27 +50,27 @@ namespace Ez2AcWallpapers
         protected void FontCollection()
         {
             // 해당 폰트 길이만큼 바이트 배열 생성
-            byte[] fontArray = Properties.Resources.NanumGothic;
-            int dataLength = Properties.Resources.NanumGothic.Length;
+            byte[] byteFontArray = Properties.Resources.NanumGothic;
+            int iLength = Properties.Resources.NanumGothic.Length;
 
             // 메모리를 생성한 후 바이트 배열을 복사
-            IntPtr ptrData = Marshal.AllocCoTaskMem(dataLength);
-            Marshal.Copy(fontArray, 0, ptrData, dataLength);
+            IntPtr ptrData = Marshal.AllocCoTaskMem(iLength);
+            Marshal.Copy(byteFontArray, 0, ptrData, iLength);
 
             // 폰트 리소스 메모리 추가
-            uint cFonts = 0;
-            AddFontMemResourceEx(ptrData, (uint)fontArray.Length, IntPtr.Zero, ref cFonts);
+            uint uiFonts = 0;
+            AddFontMemResourceEx(ptrData, (uint)byteFontArray.Length, IntPtr.Zero, ref uiFonts);
 
             // PrivateFontCollection 폰트 메모리 추가
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddMemoryFont(ptrData, dataLength);
+            PrivateFontCollection privateFontCollection = new PrivateFontCollection();
+            privateFontCollection.AddMemoryFont(ptrData, iLength);
 
             // 남은 메모리 반환
             Marshal.FreeCoTaskMem(ptrData);
 
             // 초기값
-            m_FF = pfc.Families[0];
-            m_Font = new Font(m_FF, 15f, FontStyle.Regular);
+            m_fontFamily = privateFontCollection.Families[0];
+            m_font = new Font(m_fontFamily, 15f, FontStyle.Regular);
         }
 
         /// <summary>
@@ -79,14 +79,15 @@ namespace Ez2AcWallpapers
         /// <param name="font"></param>
         protected void FontSet(Font font)
         {
-            // label_Title.Font = new Font(m_FF, 16, FontStyle.Regular);
+            // label_Title.Font = new Font(m_fontFamily, 16, FontStyle.Regular);
 
-            label5.Font = new Font(m_FF, 18f, FontStyle.Bold);
-            label2.Font = new Font(m_FF, 9.75f, FontStyle.Regular);
-            label6.Font = new Font(m_FF, 18f, FontStyle.Bold);
-            label3.Font = new Font(m_FF, 9.75f, FontStyle.Regular);
-            label4.Font = new Font(m_FF, 18f, FontStyle.Bold);
-            label1.Font = new Font(m_FF, 9.75f, FontStyle.Regular);
+            label1.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
+            label2.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
+            label3.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
+            label4.Font = new Font(m_fontFamily, 18f, FontStyle.Bold);
+            label5.Font = new Font(m_fontFamily, 18f, FontStyle.Bold);
+            label6.Font = new Font(m_fontFamily, 18f, FontStyle.Bold);
+            label7.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
         }
 
         /// <summary>
@@ -97,14 +98,14 @@ namespace Ez2AcWallpapers
             try
             {
                 // PrivateFontCollection에 폰트 메모리 추가
-                PrivateFontCollection m_pf = new PrivateFontCollection();
+                PrivateFontCollection pivateFontCollection = new PrivateFontCollection();
 
                 // 출력 디렉토리로 복사 설정 = 복사
-                m_pf.AddFontFile(Application.StartupPath + @"\Font\Userfont.ttf");
+                pivateFontCollection.AddFontFile(Application.StartupPath + @"\Font\Userfont.ttf");
 
-                m_Font = new Font(m_pf.Families[0], 10, FontStyle.Regular);
+                m_font = new Font(pivateFontCollection.Families[0], 10, FontStyle.Regular);
 
-                FontSet(m_Font);
+                FontSet(m_font);
             }
             catch (Exception)
             {
@@ -115,5 +116,34 @@ namespace Ez2AcWallpapers
 
         #endregion
 
+        /// <summary>
+        /// EZ2AC 클릭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Label4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/user/EZ2Developer");
+        }
+
+        /// <summary>
+        /// FEII TV 클릭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Label5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/user/vpdl7424");
+        }
+
+        /// <summary>
+        /// 맨 밑의 라벨 클릭 (github)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Label7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/sch6393");
+        }
     }
 }
