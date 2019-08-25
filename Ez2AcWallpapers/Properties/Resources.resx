@@ -244,9 +244,6 @@
   <data name="_7th_2_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7th_2.0.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="NanumGothic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NanumGothic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="WhiteOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhiteOut.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -258,5 +255,11 @@
   </data>
   <data name="_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3S.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_3S_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3S_Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

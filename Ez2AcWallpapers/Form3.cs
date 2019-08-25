@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using SCHLibWallpaper;
+
 namespace Ez2AcWallpapers
 {
     public partial class Form3 : Form
@@ -33,7 +35,7 @@ namespace Ez2AcWallpapers
 
         protected bool Background()
         {
-            Form1.m_bFixed = Ez2AcWallpapers.Wallpaper.Background(this.Handle);
+            Form1.m_bFixed = Wallpaper.Background(this.Handle);
 
             if (Form1.m_bFixed)
             {

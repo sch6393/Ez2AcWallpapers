@@ -51,6 +51,8 @@
             this.metroTile7_1 = new MetroFramework.Controls.MetroTile();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.metroTile16 = new MetroFramework.Controls.MetroTile();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
             this.tabPage10 = new System.Windows.Forms.TabPage();
@@ -83,6 +85,7 @@
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            this.tabPage16.SuspendLayout();
             this.tabPage9.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.tabPage11.SuspendLayout();
@@ -102,6 +105,7 @@
             this.tabControl.Controls.Add(this.tabPage6);
             this.tabControl.Controls.Add(this.tabPage7);
             this.tabControl.Controls.Add(this.tabPage8);
+            this.tabControl.Controls.Add(this.tabPage16);
             this.tabControl.Controls.Add(this.tabPage9);
             this.tabControl.Controls.Add(this.tabPage10);
             this.tabControl.Controls.Add(this.tabPage11);
@@ -115,7 +119,7 @@
             this.tabControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(783, 230);
+            this.tabControl.Size = new System.Drawing.Size(793, 230);
             this.tabControl.TabIndex = 0;
             this.tabControl.Click += new System.EventHandler(this.tabControl_Click);
             // 
@@ -127,7 +131,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(775, 202);
+            this.tabPage1.Size = new System.Drawing.Size(785, 202);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "1st";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -174,7 +178,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(775, 202);
+            this.tabPage2.Size = new System.Drawing.Size(785, 202);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "2nd";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -221,7 +225,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage3.Size = new System.Drawing.Size(775, 202);
+            this.tabPage3.Size = new System.Drawing.Size(785, 202);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "3rd";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -251,7 +255,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage4.Size = new System.Drawing.Size(775, 202);
+            this.tabPage4.Size = new System.Drawing.Size(785, 202);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "4th";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -297,7 +301,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage5.Size = new System.Drawing.Size(775, 202);
+            this.tabPage5.Size = new System.Drawing.Size(785, 202);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Platinum";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -326,7 +330,7 @@
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage6.Size = new System.Drawing.Size(775, 202);
+            this.tabPage6.Size = new System.Drawing.Size(785, 202);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "6th";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -357,7 +361,7 @@
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage7.Size = new System.Drawing.Size(775, 202);
+            this.tabPage7.Size = new System.Drawing.Size(785, 202);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "7th";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -423,7 +427,7 @@
             this.tabPage8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage8.Size = new System.Drawing.Size(775, 202);
+            this.tabPage8.Size = new System.Drawing.Size(785, 202);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "CV";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -445,6 +449,34 @@
             this.metroTile8.UseTileImage = true;
             this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
             // 
+            // tabPage16
+            // 
+            this.tabPage16.Controls.Add(this.metroTile16);
+            this.tabPage16.Location = new System.Drawing.Point(4, 24);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage16.Size = new System.Drawing.Size(785, 202);
+            this.tabPage16.TabIndex = 15;
+            this.tabPage16.Text = "3S";
+            this.tabPage16.UseVisualStyleBackColor = true;
+            // 
+            // metroTile16
+            // 
+            this.metroTile16.ActiveControl = null;
+            this.metroTile16.Location = new System.Drawing.Point(6, 7);
+            this.metroTile16.Name = "metroTile16";
+            this.metroTile16.Size = new System.Drawing.Size(250, 187);
+            this.metroTile16.TabIndex = 0;
+            this.metroTile16.Text = "3S";
+            this.metroTile16.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.metroTile16.TileImage = global::Ez2AcWallpapers.Properties.Resources._3S_Image;
+            this.metroTile16.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile16.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile16.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile16.UseSelectable = true;
+            this.metroTile16.UseTileImage = true;
+            this.metroTile16.Click += new System.EventHandler(this.MetroTile16_Click);
+            // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.metroTile9);
@@ -452,7 +484,7 @@
             this.tabPage9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage9.Size = new System.Drawing.Size(775, 202);
+            this.tabPage9.Size = new System.Drawing.Size(785, 202);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "BERA";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -481,7 +513,7 @@
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage10.Size = new System.Drawing.Size(775, 202);
+            this.tabPage10.Size = new System.Drawing.Size(785, 202);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "AEIC";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -510,7 +542,7 @@
             this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage11.Size = new System.Drawing.Size(775, 202);
+            this.tabPage11.Size = new System.Drawing.Size(785, 202);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "EC";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -538,7 +570,7 @@
             this.tabPage12.Controls.Add(this.metroTile12);
             this.tabPage12.Location = new System.Drawing.Point(4, 24);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(775, 202);
+            this.tabPage12.Size = new System.Drawing.Size(785, 202);
             this.tabPage12.TabIndex = 11;
             this.tabPage12.Text = "EV";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -566,7 +598,7 @@
             this.tabPage13.Controls.Add(this.metroTile13_1);
             this.tabPage13.Location = new System.Drawing.Point(4, 24);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Size = new System.Drawing.Size(775, 202);
+            this.tabPage13.Size = new System.Drawing.Size(785, 202);
             this.tabPage13.TabIndex = 12;
             this.tabPage13.Text = "NT";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -610,7 +642,7 @@
             this.tabPage14.Controls.Add(this.metroTile14);
             this.tabPage14.Location = new System.Drawing.Point(4, 24);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(775, 202);
+            this.tabPage14.Size = new System.Drawing.Size(785, 202);
             this.tabPage14.TabIndex = 13;
             this.tabPage14.Text = "TT";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -638,7 +670,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 24);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(775, 202);
+            this.tabPage15.Size = new System.Drawing.Size(785, 202);
             this.tabPage15.TabIndex = 14;
             this.tabPage15.Text = "FN";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -798,6 +830,7 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
+            this.tabPage16.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.tabPage11.ResumeLayout(false);
@@ -857,6 +890,8 @@
         private MetroFramework.Controls.MetroButton metroButton_Northpole;
         private System.Windows.Forms.TabPage tabPage15;
         private MetroFramework.Controls.MetroTile metroTile15;
+        private System.Windows.Forms.TabPage tabPage16;
+        private MetroFramework.Controls.MetroTile metroTile16;
     }
 }
 

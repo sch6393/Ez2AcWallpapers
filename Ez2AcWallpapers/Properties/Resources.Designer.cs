@@ -231,6 +231,26 @@ namespace Ez2AcWallpapers.Properties {
         }
         
         /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] _3S {
+            get {
+                object obj = ResourceManager.GetObject("_3S", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3S_Image {
+            get {
+                object obj = ResourceManager.GetObject("_3S_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         internal static System.Drawing.Bitmap _4_1 {
@@ -467,16 +487,6 @@ namespace Ez2AcWallpapers.Properties {
             get {
                 object obj = ResourceManager.GetObject("icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static byte[] NanumGothic {
-            get {
-                object obj = ResourceManager.GetObject("NanumGothic", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         

@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 // 추가
-using System.Drawing.Text;
 using System.IO;
-using System.Runtime.InteropServices;
 
 // NuGet 패키지
 using MetroFramework.Forms;
+
+using SCHLibFont;
 
 namespace Ez2AcWallpapers
 {
@@ -26,21 +26,11 @@ namespace Ez2AcWallpapers
         public Program g_program;
 
         /// <summary>
-        /// 폰트 메모리 등록
-        /// </summary>
-        /// <param name="pbFont"></param>
-        /// <param name="cbFont"></param>
-        /// <param name="pdv"></param>
-        /// <param name="pcFonts"></param>
-        /// <returns></returns>
-        [DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [In] ref uint pcFonts);
-
-        /// <summary>
         /// 폰트 선언
         /// </summary>
-        protected FontFamily m_fontFamily;
-        protected Font m_font;
+        // protected FontFamily m_fontFamily;
+        // protected Font m_font;
+        protected SCHFont m_SCHFont = new SCHFont();
 
         /// <summary>
         /// Form2가 필요로 하는 데이터 변수들
@@ -86,19 +76,20 @@ namespace Ez2AcWallpapers
         /// 20 : White Out
         /// 21 : North Pole
         /// 22 : FN
+        /// 23 : 3S
         /// </summary>
-        protected bool[] m_bFlag = new bool[23];
+        protected bool[] m_bFlag = new bool[24];
 
         // 첫 탭 페이지 설정
-        protected int m_iSelect = 14;
+        protected int m_iSelect = 15;
         // protected int m_iTile = 0;
 
         public Form1()
         {
             InitializeComponent();
 
-            FontCollection();
-            FontSet(m_font);
+            m_SCHFont.FontCollection();
+            FontSet();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -127,70 +118,17 @@ namespace Ez2AcWallpapers
         #region Font
 
         /// <summary>
-        /// 폰트 컬렉션 생성
-        /// </summary>
-        protected void FontCollection()
-        {
-            // 해당 폰트 길이만큼 바이트 배열 생성
-            byte[] byteFontArray = Properties.Resources.NanumGothic;
-            int iLength = Properties.Resources.NanumGothic.Length;
-
-            // 메모리를 생성한 후 바이트 배열을 복사
-            IntPtr ptrData = Marshal.AllocCoTaskMem(iLength);
-            Marshal.Copy(byteFontArray, 0, ptrData, iLength);
-
-            // 폰트 리소스 메모리 추가
-            uint uiFonts = 0;
-            AddFontMemResourceEx(ptrData, (uint)byteFontArray.Length, IntPtr.Zero, ref uiFonts);
-
-            // PrivateFontCollection 폰트 메모리 추가
-            PrivateFontCollection privateFontCollection = new PrivateFontCollection();
-            privateFontCollection.AddMemoryFont(ptrData, iLength);
-
-            // 남은 메모리 반환
-            Marshal.FreeCoTaskMem(ptrData);
-
-            // 초기값
-            m_fontFamily = privateFontCollection.Families[0];
-            m_font = new Font(m_fontFamily, 15f, FontStyle.Regular);
-        }
-
-        /// <summary>
         /// 폰트 설정
         /// </summary>
-        /// <param name="font"></param>
-        protected void FontSet(Font font)
+        protected void FontSet()
         {
-            // label_Title.Font = new Font(m_fontFamily, 16, FontStyle.Regular);
+            m_SCHFont.FontSet(tabControl, 9.75f, FontStyle.Regular);
+            m_SCHFont.FontSet(label_Volume, 9.75f, FontStyle.Regular);
+            m_SCHFont.FontSet(label_Brightness, 9.75f, FontStyle.Regular);
 
-            tabControl.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
-
-            label_Volume.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
-            label_Brightness.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
-        }
-
-        /// <summary>
-        /// 외부에서 폰트 파일 불러와 설정하기
-        /// </summary>
-        protected void ExternFontFile()
-        {
-            try
-            {
-                // PrivateFontCollection에 폰트 메모리 추가
-                PrivateFontCollection pivateFontCollection = new PrivateFontCollection();
-
-                // 출력 디렉토리로 복사 설정 = 복사
-                pivateFontCollection.AddFontFile(Application.StartupPath + @"\Font\Userfont.ttf");
-
-                m_font = new Font(pivateFontCollection.Families[0], 10, FontStyle.Regular);
-
-                FontSet(m_font);
-            }
-            catch (Exception)
-            {
-                // MessageBox.Show("Font 폴더에 'Userfont.ttf' 파일이 존재하지 않습니다!\n시스템 기본 폰트로 실행합니다.", "에러 발생", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // MessageBox.Show("Error!", "'Userfont.ttf' File Does not Exist in the Font Folder! Run as the System Default Font!");
-            }
+            //tabControl.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
+            //label_Volume.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
+            //label_Brightness.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
         }
 
         #endregion
@@ -366,6 +304,10 @@ namespace Ez2AcWallpapers
 
                     case 22:
                         File.WriteAllBytes(varFile, Properties.Resources.FN);
+                        break;
+
+                    case 23:
+                        File.WriteAllBytes(varFile, Properties.Resources._3S);
                         break;
 
                     default:
@@ -594,6 +536,16 @@ namespace Ez2AcWallpapers
         private void MetroTile15_Click(object sender, EventArgs e)
         {
             Tiles(22);
+        }
+
+        /// <summary>
+        /// 3S
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MetroTile16_Click(object sender, EventArgs e)
+        {
+            Tiles(23);
         }
 
         #endregion
