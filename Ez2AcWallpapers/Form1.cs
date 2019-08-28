@@ -28,8 +28,6 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 폰트 선언
         /// </summary>
-        // protected FontFamily m_fontFamily;
-        // protected Font m_font;
         protected SCHFont m_SCHFont = new SCHFont();
 
         /// <summary>
@@ -77,11 +75,13 @@ namespace Ez2AcWallpapers
         /// 21 : North Pole
         /// 22 : FN
         /// 23 : 3S
+        /// 24 : EZ2ON
+        /// 25 : EZ2ON REBOOT
         /// </summary>
-        protected bool[] m_bFlag = new bool[24];
+        protected bool[] m_bFlag = new bool[26];
 
         // 첫 탭 페이지 설정
-        protected int m_iSelect = 15;
+        protected int m_iSelect = 16;
         // protected int m_iTile = 0;
 
         public Form1()
@@ -125,6 +125,8 @@ namespace Ez2AcWallpapers
             m_SCHFont.FontSet(tabControl, 9.75f, FontStyle.Regular);
             m_SCHFont.FontSet(label_Volume, 9.75f, FontStyle.Regular);
             m_SCHFont.FontSet(label_Brightness, 9.75f, FontStyle.Regular);
+
+            m_SCHFont.FontSet(tabControl, 9.75f, FontStyle.Regular);
 
             //tabControl.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
             //label_Volume.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
@@ -308,6 +310,14 @@ namespace Ez2AcWallpapers
 
                     case 23:
                         File.WriteAllBytes(varFile, Properties.Resources._3S);
+                        break;
+
+                    case 24:
+                        File.WriteAllBytes(varFile, Properties.Resources.Ez2On);
+                        break;
+
+                    case 25:
+                        File.WriteAllBytes(varFile, Properties.Resources.Ez2On_Reboot);
                         break;
 
                     default:
@@ -546,6 +556,26 @@ namespace Ez2AcWallpapers
         private void MetroTile16_Click(object sender, EventArgs e)
         {
             Tiles(23);
+        }
+
+        /// <summary>
+        /// EZ2ON
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MetroTile17_1_Click(object sender, EventArgs e)
+        {
+            Tiles(24);
+        }
+
+        /// <summary>
+        /// EZ2ON REBOOT
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MetroTile17_2_Click(object sender, EventArgs e)
+        {
+            Tiles(25);
         }
 
         #endregion

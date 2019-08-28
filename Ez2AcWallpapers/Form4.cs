@@ -8,9 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Drawing.Text;
-using System.Runtime.InteropServices;
-
 using MetroFramework.Forms;
 
 using SCHLibFont;
@@ -20,21 +17,8 @@ namespace Ez2AcWallpapers
     public partial class Form4 : MetroForm
     {
         /// <summary>
-        /// 폰트 메모리 등록
-        /// </summary>
-        /// <param name="pbFont"></param>
-        /// <param name="cbFont"></param>
-        /// <param name="pdv"></param>
-        /// <param name="pcFonts"></param>
-        /// <returns></returns>
-        [DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [In] ref uint pcFonts);
-
-        /// <summary>
         /// 폰트 선언
         /// </summary>
-        // protected FontFamily m_fontFamily;
-        // protected Font m_font;
         protected SCHFont m_SCHFont = new SCHFont();
 
         public Form4()
@@ -61,6 +45,8 @@ namespace Ez2AcWallpapers
             m_SCHFont.FontSet(label7, 9.75f, FontStyle.Regular);
             m_SCHFont.FontSet(label8, 18f, FontStyle.Bold);
             m_SCHFont.FontSet(label9, 9.75f, FontStyle.Regular);
+            m_SCHFont.FontSet(label10, 18f, FontStyle.Bold);
+            m_SCHFont.FontSet(label11, 9.75f, FontStyle.Regular);
 
             //label1.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
             //label2.Font = new Font(m_fontFamily, 9.75f, FontStyle.Regular);
@@ -111,6 +97,16 @@ namespace Ez2AcWallpapers
         private void Label8_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/user/EZ2Database");
+        }
+
+        /// <summary>
+        /// HUNNYBEAR 클릭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Label10_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/user/jhon2472");
         }
     }
 }

@@ -59,6 +59,9 @@
             this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.metroTile11 = new MetroFramework.Controls.MetroTile();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.metroTile17_2 = new MetroFramework.Controls.MetroTile();
+            this.metroTile17_1 = new MetroFramework.Controls.MetroTile();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.metroTile12 = new MetroFramework.Controls.MetroTile();
             this.tabPage13 = new System.Windows.Forms.TabPage();
@@ -89,6 +92,7 @@
             this.tabPage9.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.tabPage11.SuspendLayout();
+            this.tabPage17.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
             this.tabPage14.SuspendLayout();
@@ -109,6 +113,7 @@
             this.tabControl.Controls.Add(this.tabPage9);
             this.tabControl.Controls.Add(this.tabPage10);
             this.tabControl.Controls.Add(this.tabPage11);
+            this.tabControl.Controls.Add(this.tabPage17);
             this.tabControl.Controls.Add(this.tabPage12);
             this.tabControl.Controls.Add(this.tabPage13);
             this.tabControl.Controls.Add(this.tabPage14);
@@ -119,7 +124,7 @@
             this.tabControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(793, 230);
+            this.tabControl.Size = new System.Drawing.Size(845, 230);
             this.tabControl.TabIndex = 0;
             this.tabControl.Click += new System.EventHandler(this.tabControl_Click);
             // 
@@ -131,7 +136,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(785, 202);
+            this.tabPage1.Size = new System.Drawing.Size(837, 202);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "1st";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -139,7 +144,7 @@
             // metroTile1_2
             // 
             this.metroTile1_2.ActiveControl = null;
-            this.metroTile1_2.Location = new System.Drawing.Point(262, 7);
+            this.metroTile1_2.Location = new System.Drawing.Point(263, 7);
             this.metroTile1_2.Name = "metroTile1_2";
             this.metroTile1_2.Size = new System.Drawing.Size(250, 187);
             this.metroTile1_2.TabIndex = 1;
@@ -178,7 +183,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(785, 202);
+            this.tabPage2.Size = new System.Drawing.Size(837, 202);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "2nd";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -186,7 +191,7 @@
             // metroTile2_2
             // 
             this.metroTile2_2.ActiveControl = null;
-            this.metroTile2_2.Location = new System.Drawing.Point(262, 7);
+            this.metroTile2_2.Location = new System.Drawing.Point(263, 7);
             this.metroTile2_2.Name = "metroTile2_2";
             this.metroTile2_2.Size = new System.Drawing.Size(250, 187);
             this.metroTile2_2.TabIndex = 1;
@@ -225,7 +230,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage3.Size = new System.Drawing.Size(785, 202);
+            this.tabPage3.Size = new System.Drawing.Size(837, 202);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "3rd";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -255,7 +260,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage4.Size = new System.Drawing.Size(785, 202);
+            this.tabPage4.Size = new System.Drawing.Size(837, 202);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "4th";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -263,7 +268,7 @@
             // metroTile4_2
             // 
             this.metroTile4_2.ActiveControl = null;
-            this.metroTile4_2.Location = new System.Drawing.Point(263, 8);
+            this.metroTile4_2.Location = new System.Drawing.Point(263, 7);
             this.metroTile4_2.Name = "metroTile4_2";
             this.metroTile4_2.Size = new System.Drawing.Size(250, 187);
             this.metroTile4_2.TabIndex = 1;
@@ -301,7 +306,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage5.Size = new System.Drawing.Size(785, 202);
+            this.tabPage5.Size = new System.Drawing.Size(837, 202);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Platinum";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -330,7 +335,7 @@
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage6.Size = new System.Drawing.Size(785, 202);
+            this.tabPage6.Size = new System.Drawing.Size(837, 202);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "6th";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -361,7 +366,7 @@
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage7.Size = new System.Drawing.Size(785, 202);
+            this.tabPage7.Size = new System.Drawing.Size(837, 202);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "7th";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -369,7 +374,7 @@
             // metroTile7_2
             // 
             this.metroTile7_2.ActiveControl = null;
-            this.metroTile7_2.Location = new System.Drawing.Point(263, 8);
+            this.metroTile7_2.Location = new System.Drawing.Point(263, 7);
             this.metroTile7_2.Name = "metroTile7_2";
             this.metroTile7_2.Size = new System.Drawing.Size(250, 187);
             this.metroTile7_2.TabIndex = 1;
@@ -387,7 +392,7 @@
             // metroTile7_3
             // 
             this.metroTile7_3.ActiveControl = null;
-            this.metroTile7_3.Location = new System.Drawing.Point(519, 8);
+            this.metroTile7_3.Location = new System.Drawing.Point(520, 7);
             this.metroTile7_3.Name = "metroTile7_3";
             this.metroTile7_3.Size = new System.Drawing.Size(250, 187);
             this.metroTile7_3.TabIndex = 2;
@@ -427,7 +432,7 @@
             this.tabPage8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage8.Size = new System.Drawing.Size(785, 202);
+            this.tabPage8.Size = new System.Drawing.Size(837, 202);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "CV";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -455,7 +460,7 @@
             this.tabPage16.Location = new System.Drawing.Point(4, 24);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(785, 202);
+            this.tabPage16.Size = new System.Drawing.Size(837, 202);
             this.tabPage16.TabIndex = 15;
             this.tabPage16.Text = "3S";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -484,7 +489,7 @@
             this.tabPage9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage9.Size = new System.Drawing.Size(785, 202);
+            this.tabPage9.Size = new System.Drawing.Size(837, 202);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "BERA";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -513,7 +518,7 @@
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage10.Size = new System.Drawing.Size(785, 202);
+            this.tabPage10.Size = new System.Drawing.Size(837, 202);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "AEIC";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -542,7 +547,7 @@
             this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage11.Size = new System.Drawing.Size(785, 202);
+            this.tabPage11.Size = new System.Drawing.Size(837, 202);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "EC";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -565,12 +570,59 @@
             this.metroTile11.UseTileImage = true;
             this.metroTile11.Click += new System.EventHandler(this.metroTile11_Click);
             // 
+            // tabPage17
+            // 
+            this.tabPage17.Controls.Add(this.metroTile17_2);
+            this.tabPage17.Controls.Add(this.metroTile17_1);
+            this.tabPage17.Location = new System.Drawing.Point(4, 24);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage17.Size = new System.Drawing.Size(837, 202);
+            this.tabPage17.TabIndex = 16;
+            this.tabPage17.Text = "EZ2ON";
+            this.tabPage17.UseVisualStyleBackColor = true;
+            // 
+            // metroTile17_2
+            // 
+            this.metroTile17_2.ActiveControl = null;
+            this.metroTile17_2.Location = new System.Drawing.Point(263, 7);
+            this.metroTile17_2.Name = "metroTile17_2";
+            this.metroTile17_2.Size = new System.Drawing.Size(250, 187);
+            this.metroTile17_2.TabIndex = 1;
+            this.metroTile17_2.Text = "EZ2ON REBOOT";
+            this.metroTile17_2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.metroTile17_2.TileImage = global::Ez2AcWallpapers.Properties.Resources.Ez2On_Reboot_Image;
+            this.metroTile17_2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile17_2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile17_2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile17_2.UseSelectable = true;
+            this.metroTile17_2.UseTileImage = true;
+            this.metroTile17_2.Click += new System.EventHandler(this.MetroTile17_2_Click);
+            // 
+            // metroTile17_1
+            // 
+            this.metroTile17_1.ActiveControl = null;
+            this.metroTile17_1.BackColor = System.Drawing.Color.Transparent;
+            this.metroTile17_1.Location = new System.Drawing.Point(6, 7);
+            this.metroTile17_1.Name = "metroTile17_1";
+            this.metroTile17_1.Size = new System.Drawing.Size(250, 187);
+            this.metroTile17_1.TabIndex = 0;
+            this.metroTile17_1.Text = "EZ2ON";
+            this.metroTile17_1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.metroTile17_1.TileImage = global::Ez2AcWallpapers.Properties.Resources.Ez2On_Image;
+            this.metroTile17_1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile17_1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile17_1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile17_1.UseSelectable = true;
+            this.metroTile17_1.UseTileImage = true;
+            this.metroTile17_1.Click += new System.EventHandler(this.MetroTile17_1_Click);
+            // 
             // tabPage12
             // 
             this.tabPage12.Controls.Add(this.metroTile12);
             this.tabPage12.Location = new System.Drawing.Point(4, 24);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(785, 202);
+            this.tabPage12.Size = new System.Drawing.Size(837, 202);
             this.tabPage12.TabIndex = 11;
             this.tabPage12.Text = "EV";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -598,7 +650,7 @@
             this.tabPage13.Controls.Add(this.metroTile13_1);
             this.tabPage13.Location = new System.Drawing.Point(4, 24);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Size = new System.Drawing.Size(785, 202);
+            this.tabPage13.Size = new System.Drawing.Size(837, 202);
             this.tabPage13.TabIndex = 12;
             this.tabPage13.Text = "NT";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -642,7 +694,7 @@
             this.tabPage14.Controls.Add(this.metroTile14);
             this.tabPage14.Location = new System.Drawing.Point(4, 24);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(785, 202);
+            this.tabPage14.Size = new System.Drawing.Size(837, 202);
             this.tabPage14.TabIndex = 13;
             this.tabPage14.Text = "TT";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -670,7 +722,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 24);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(785, 202);
+            this.tabPage15.Size = new System.Drawing.Size(837, 202);
             this.tabPage15.TabIndex = 14;
             this.tabPage15.Text = "FN";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -696,12 +748,12 @@
             // 
             this.metroTrackBar_Brightness.BackColor = System.Drawing.Color.Transparent;
             this.metroTrackBar_Brightness.LargeChange = 10;
-            this.metroTrackBar_Brightness.Location = new System.Drawing.Point(472, 301);
+            this.metroTrackBar_Brightness.Location = new System.Drawing.Point(488, 301);
             this.metroTrackBar_Brightness.Maximum = 50;
             this.metroTrackBar_Brightness.Minimum = 5;
             this.metroTrackBar_Brightness.MouseWheelBarPartitions = 5;
             this.metroTrackBar_Brightness.Name = "metroTrackBar_Brightness";
-            this.metroTrackBar_Brightness.Size = new System.Drawing.Size(330, 23);
+            this.metroTrackBar_Brightness.Size = new System.Drawing.Size(380, 23);
             this.metroTrackBar_Brightness.SmallChange = 5;
             this.metroTrackBar_Brightness.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTrackBar_Brightness.TabIndex = 4;
@@ -715,7 +767,7 @@
             this.metroTrackBar_Volume.LargeChange = 10;
             this.metroTrackBar_Volume.Location = new System.Drawing.Point(23, 301);
             this.metroTrackBar_Volume.Name = "metroTrackBar_Volume";
-            this.metroTrackBar_Volume.Size = new System.Drawing.Size(330, 23);
+            this.metroTrackBar_Volume.Size = new System.Drawing.Size(380, 23);
             this.metroTrackBar_Volume.SmallChange = 10;
             this.metroTrackBar_Volume.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTrackBar_Volume.TabIndex = 3;
@@ -742,7 +794,7 @@
             this.label_Brightness.BackColor = System.Drawing.Color.Transparent;
             this.label_Brightness.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_Brightness.ForeColor = System.Drawing.Color.Black;
-            this.label_Brightness.Location = new System.Drawing.Point(469, 327);
+            this.label_Brightness.Location = new System.Drawing.Point(485, 327);
             this.label_Brightness.Name = "label_Brightness";
             this.label_Brightness.Size = new System.Drawing.Size(71, 15);
             this.label_Brightness.TabIndex = 0;
@@ -752,7 +804,7 @@
             // 
             this.metroButton.BackColor = System.Drawing.Color.Orange;
             this.metroButton.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton.Location = new System.Drawing.Point(706, 355);
+            this.metroButton.Location = new System.Drawing.Point(768, 355);
             this.metroButton.Name = "metroButton";
             this.metroButton.Size = new System.Drawing.Size(100, 30);
             this.metroButton.TabIndex = 7;
@@ -765,7 +817,7 @@
             // 
             this.metroButton_Stop.BackColor = System.Drawing.Color.Crimson;
             this.metroButton_Stop.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton_Stop.Location = new System.Drawing.Point(388, 355);
+            this.metroButton_Stop.Location = new System.Drawing.Point(450, 355);
             this.metroButton_Stop.Name = "metroButton_Stop";
             this.metroButton_Stop.Size = new System.Drawing.Size(100, 30);
             this.metroButton_Stop.TabIndex = 4;
@@ -777,7 +829,7 @@
             // metroButton_WhiteOut
             // 
             this.metroButton_WhiteOut.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton_WhiteOut.Location = new System.Drawing.Point(600, 355);
+            this.metroButton_WhiteOut.Location = new System.Drawing.Point(662, 355);
             this.metroButton_WhiteOut.Name = "metroButton_WhiteOut";
             this.metroButton_WhiteOut.Size = new System.Drawing.Size(100, 30);
             this.metroButton_WhiteOut.TabIndex = 6;
@@ -789,7 +841,7 @@
             // metroButton_Northpole
             // 
             this.metroButton_Northpole.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton_Northpole.Location = new System.Drawing.Point(494, 355);
+            this.metroButton_Northpole.Location = new System.Drawing.Point(556, 355);
             this.metroButton_Northpole.Name = "metroButton_Northpole";
             this.metroButton_Northpole.Size = new System.Drawing.Size(100, 30);
             this.metroButton_Northpole.TabIndex = 5;
@@ -801,7 +853,7 @@
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(830, 408);
+            this.ClientSize = new System.Drawing.Size(891, 408);
             this.Controls.Add(this.metroButton_Northpole);
             this.Controls.Add(this.metroButton_WhiteOut);
             this.Controls.Add(this.metroButton_Stop);
@@ -834,6 +886,7 @@
             this.tabPage9.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.tabPage11.ResumeLayout(false);
+            this.tabPage17.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
             this.tabPage13.ResumeLayout(false);
             this.tabPage14.ResumeLayout(false);
@@ -892,6 +945,9 @@
         private MetroFramework.Controls.MetroTile metroTile15;
         private System.Windows.Forms.TabPage tabPage16;
         private MetroFramework.Controls.MetroTile metroTile16;
+        private System.Windows.Forms.TabPage tabPage17;
+        private MetroFramework.Controls.MetroTile metroTile17_2;
+        private MetroFramework.Controls.MetroTile metroTile17_1;
     }
 }
 

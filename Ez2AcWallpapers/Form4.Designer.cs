@@ -38,6 +38,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -48,10 +50,10 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(210, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 270);
+            this.label2.Size = new System.Drawing.Size(102, 285);
             this.label2.TabIndex = 0;
             this.label2.Text = "1st\r\n1st Special\r\n2nd\r\n2nd Event\r\n3rd\r\n4th\r\n4th Event\r\nPlatinum\r\n6th\r\n7th 1.0\r\n7t" +
-    "h 2.0\r\nCV\r\n3S\r\nAEIC\r\nNT\r\nCV2\r\nTT\r\nFN";
+    "h 2.0\r\nCV\r\n3S\r\nAEIC\r\nEZ2ON REBOOT\r\nNT\r\nCV2\r\nTT\r\nFN";
             // 
             // label5
             // 
@@ -74,7 +76,7 @@
             this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label6.Location = new System.Drawing.Point(23, 450);
+            this.label6.Location = new System.Drawing.Point(23, 520);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 28);
             this.label6.TabIndex = 0;
@@ -86,7 +88,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(210, 450);
+            this.label3.Location = new System.Drawing.Point(210, 520);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 45);
             this.label3.TabIndex = 0;
@@ -125,7 +127,7 @@
             this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(23, 515);
+            this.label7.Location = new System.Drawing.Point(23, 585);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(274, 45);
             this.label7.TabIndex = 0;
@@ -160,10 +162,38 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "EC";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label10.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label10.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label10.Location = new System.Drawing.Point(23, 470);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(157, 28);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "HUNNYBEAR";
+            this.label10.Click += new System.EventHandler(this.Label10_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(210, 470);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 15);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "EZ2ON";
+            // 
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(320, 580);
+            this.ClientSize = new System.Drawing.Size(320, 650);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -196,5 +226,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

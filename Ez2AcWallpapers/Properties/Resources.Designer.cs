@@ -473,6 +473,46 @@ namespace Ez2AcWallpapers.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static byte[] Ez2On {
+            get {
+                object obj = ResourceManager.GetObject("Ez2On", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ez2On_Image {
+            get {
+                object obj = ResourceManager.GetObject("Ez2On_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] Ez2On_Reboot {
+            get {
+                object obj = ResourceManager.GetObject("Ez2On_Reboot", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ez2On_Reboot_Image {
+            get {
+                object obj = ResourceManager.GetObject("Ez2On_Reboot_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static byte[] FN {
             get {
                 object obj = ResourceManager.GetObject("FN", resourceCulture);
