@@ -413,6 +413,16 @@ namespace Ez2AcWallpapers.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static byte[] AxInterop_WMPLib {
+            get {
+                object obj = ResourceManager.GetObject("AxInterop_WMPLib", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static byte[] BERA {
             get {
                 object obj = ResourceManager.GetObject("BERA", resourceCulture);
@@ -533,6 +543,26 @@ namespace Ez2AcWallpapers.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static byte[] Interop_WMPLib {
+            get {
+                object obj = ResourceManager.GetObject("Interop_WMPLib", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] MetroFramework {
+            get {
+                object obj = ResourceManager.GetObject("MetroFramework", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static byte[] northpole {
             get {
                 object obj = ResourceManager.GetObject("northpole", resourceCulture);
@@ -556,6 +586,26 @@ namespace Ez2AcWallpapers.Properties {
         internal static byte[] Platinum {
             get {
                 object obj = ResourceManager.GetObject("Platinum", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] SCHLibFont {
+            get {
+                object obj = ResourceManager.GetObject("SCHLibFont", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] SCHLibWallpaper {
+            get {
+                object obj = ResourceManager.GetObject("SCHLibWallpaper", resourceCulture);
                 return ((byte[])(obj));
             }
         }

@@ -240,8 +240,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <Content Include="Lib\AxInterop.WMPLib.dll" />
+    <Content Include="Lib\Interop.WMPLib.dll" />
+    <Content Include="Lib\MetroFramework.dll" />
     <Content Include="Lib\SCHLibFont.dll" />
     <Content Include="Lib\SCHLibWallpaper.dll" />
+    <EmbeddedResource Include="Resources\SCHLibWallpaper.dll" />
+    <EmbeddedResource Include="Resources\SCHLibFont.dll" />
+    <EmbeddedResource Include="Resources\MetroFramework.dll" />
+    <EmbeddedResource Include="Resources\Interop.WMPLib.dll" />
+    <EmbeddedResource Include="Resources\AxInterop.WMPLib.dll" />
     <None Include="Resources\Ez2On_Reboot_Image.jpg" />
     <None Include="Resources\Ez2On_Image.png" />
     <None Include="Resources\Ez2On_Reboot.mp4" />

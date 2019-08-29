@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.IO;
+using System.Reflection;
+
 namespace Ez2AcWallpapers
 {
     /// <summary>
@@ -17,9 +20,39 @@ namespace Ez2AcWallpapers
         [STAThread]
         static void Main()
         {
+            // 리소스 DLL 파일
+            AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(ResolveAssembly);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Program());
+        }
+
+        // .NET 4.0 이상 (LINQ 지원)
+        static Assembly ResolveAssembly(object sender, ResolveEventArgs args)
+        {
+            Assembly assembly = Assembly.GetExecutingAssembly();
+
+            var varName = args.Name.Substring(0, args.Name.IndexOf(',')) + ".dll";
+            var varResource = assembly.GetManifestResourceNames().Where(s => s.EndsWith(varName));
+
+            if (varResource.Count() > 0)
+            {
+                string strResourceName = varResource.First();
+
+                using (Stream stream = assembly.GetManifestResourceStream(strResourceName))
+                {
+                    if (stream != null)
+                    {
+                        byte[] byteAssembly = new byte[stream.Length];
+                        stream.Read(byteAssembly, 0, byteAssembly.Length);
+
+                        return Assembly.Load(byteAssembly);
+                    }
+                }
+            }
+
+            return null;
         }
 
         /// <summary>
