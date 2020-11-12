@@ -6,3 +6,4 @@ Ez2AcWallpapers
 - 1.3 : 3S 추가, DLL 사용
 - 1.4 : Ez2On 추가
 - 1.5 : 단일 exe 방식으로 변경
+- 1.6 : FN EX 추가
