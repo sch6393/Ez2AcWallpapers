@@ -19,7 +19,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 폰트 선언
         /// </summary>
-        protected SCHFont m_SCHFont = new SCHFont();
+        private SCHFont m_SCHFont = new SCHFont();
 
         public Form4()
         {
@@ -34,7 +34,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 폰트 설정
         /// </summary>
-        protected void FontSet()
+        private void FontSet()
         {
             m_SCHFont.FontSet(label1, 9.75f, FontStyle.Regular);
             m_SCHFont.FontSet(label2, 9.75f, FontStyle.Regular);

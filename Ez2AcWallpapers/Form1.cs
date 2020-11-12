@@ -28,7 +28,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 폰트 선언
         /// </summary>
-        protected SCHFont m_SCHFont = new SCHFont();
+        private SCHFont m_SCHFont = new SCHFont();
 
         /// <summary>
         /// Form2가 필요로 하는 데이터 변수들
@@ -78,11 +78,11 @@ namespace Ez2AcWallpapers
         /// 24 : EZ2ON
         /// 25 : EZ2ON REBOOT
         /// </summary>
-        protected bool[] m_bFlag = new bool[26];
+        private bool[] m_bFlag = new bool[27];
 
         // 첫 탭 페이지 설정
-        protected int m_iSelect = 16;
-        // protected int m_iTile = 0;
+        private int m_iSelect = 17;
+        // private int m_iTile = 0;
 
         public Form1()
         {
@@ -120,7 +120,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 폰트 설정
         /// </summary>
-        protected void FontSet()
+        private void FontSet()
         {
             m_SCHFont.FontSet(tabControl, 9.75f, FontStyle.Regular);
             m_SCHFont.FontSet(label_Volume, 9.75f, FontStyle.Regular);
@@ -141,7 +141,7 @@ namespace Ez2AcWallpapers
         /// 밝기 조절
         /// Form3의 기본 Opacity 값은 50%으로 설정
         /// </summary>
-        protected void SetBrightness(int itmp)
+        private void SetBrightness(int itmp)
         {
             float ftmp = itmp * 0.01f;
 
@@ -160,7 +160,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 재생
         /// </summary>
-        protected void Play()
+        private void Play()
         {
             Stop();
 
@@ -170,7 +170,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 정지
         /// </summary>
-        protected void Stop()
+        private void Stop()
         {
             g_program.m_Form2.Stop();
         }
@@ -178,7 +178,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// Flag 초기화
         /// </summary>
-        protected void InitFlag(int itmp)
+        private void InitFlag(int itmp)
         {
             for (int i = 0; i < m_bFlag.Length; i++)
             {
@@ -194,7 +194,7 @@ namespace Ez2AcWallpapers
         /// <summary>
         /// 타일 클릭
         /// </summary>
-        protected void Tiles(int itmp)
+        private void Tiles(int itmp)
         {
             // 파일 이름 사용 중 우회
             if (itmp == -1)
@@ -318,6 +318,10 @@ namespace Ez2AcWallpapers
 
                     case 25:
                         File.WriteAllBytes(varFile, Properties.Resources.Ez2On_Reboot);
+                        break;
+
+                    case 26:
+                        File.WriteAllBytes(varFile, Properties.Resources.FNEX);
                         break;
 
                     default:
@@ -576,6 +580,16 @@ namespace Ez2AcWallpapers
         private void MetroTile17_2_Click(object sender, EventArgs e)
         {
             Tiles(25);
+        }
+
+        /// <summary>
+        /// FN EX
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void metroTile18_Click(object sender, EventArgs e)
+        {
+            Tiles(26);
         }
 
         #endregion

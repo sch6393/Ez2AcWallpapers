@@ -245,6 +245,9 @@
     <Content Include="Lib\MetroFramework.dll" />
     <Content Include="Lib\SCHLibFont.dll" />
     <Content Include="Lib\SCHLibWallpaper.dll" />
+    <None Include="Resources\FNEX.mp4" />
+    <None Include="Resources\18.png" />
+    <None Include="Resources\fnex.png" />
     <EmbeddedResource Include="Resources\SCHLibWallpaper.dll" />
     <EmbeddedResource Include="Resources\SCHLibFont.dll" />
     <EmbeddedResource Include="Resources\MetroFramework.dll" />

@@ -33,7 +33,7 @@ namespace Ez2AcWallpapers
 
         #region Background
 
-        protected bool Background()
+        private bool Background()
         {
             Form1.m_bFixed = Wallpaper.Background(this.Handle);
 
